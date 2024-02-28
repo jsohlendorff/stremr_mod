@@ -1,0 +1,48 @@
+Package: gridisl
+Title: Discrete Super Learner with Grid-Search for Longitudinal Data
+Version: 0.0.7.9000
+Authors@R: c(
+    person("Oleg", "Sofrygin", role=c("aut", "cre"), email="oleg.sofrygin@gmail.com"),
+    person(c("Mark", "J."), "van der Laan", role="aut", email="laan@berkeley.edu"))
+Description: Machine Learning Toolkit with Grid-Search Discrete Super Learner for Longitudinal Data. Provides access to machine learning algorithms implemented in xgboost or h2o (RandomForests, Gradient Boosting Machines, Deep Neural Nets). Simple syntax for specifying large grids of tuning parameters, including random grid search over parameter space. Model selection can be performed via V-fold cross-validation or random validation splits.
+URL: https://github.com/osofr/gridisl
+BugReports: https://github.com/osofr/gridisl/issues
+SystemRequirements: pandoc (http://pandoc.org) for generating and exporting
+    markdown reports to other formats.
+Depends:
+    R (>= 3.2.1),
+    ggplot2 (>= 2.2.0)
+Imports:
+    assertthat,
+    data.table,
+    dplyr,
+    ggplot2,
+    h2o,
+    magrittr,
+    methods,
+    origami,
+    R6,
+    Rcpp,
+    rmarkdown,
+    pander,
+    purrr,
+    speedglm,
+    SuperLearner,
+    stats,
+    tibble,
+    tidyr,
+    xgboost
+LinkingTo: Rcpp
+Suggests:
+    brokenstick (>= 0.49),
+    face (>= 0.1-2),
+    doParallel,
+    foreach,
+    ggiraph,
+    knitr,
+    RUnit,
+    testthat,
+    mockery
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 6.0.1
